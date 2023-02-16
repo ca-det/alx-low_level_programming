@@ -1,4 +1,4 @@
-#include <stiod.h>
+#include <stdio.h>
 #include <unistd.h>
 /**
  * main- programm to print line without certain functions
