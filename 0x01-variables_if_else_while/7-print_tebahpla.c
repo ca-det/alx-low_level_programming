@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main- program to print the alphabets
+ * main- reversing my alphabets
  *
  * Return: 0 (Success)
 */
@@ -9,13 +9,11 @@ int main(void)
 {
 char new;
 
-for (new = 'a' ; new <= 'z' ; new++)
+for (new = 'z' ; new >= 'a' ; new--)
 {
-putchar (new);
+putchar(new);
 }
-
 putchar('\n');
-
 return (0);
 }
 
