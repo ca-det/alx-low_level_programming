@@ -7,13 +7,13 @@
 
 int main(void)
 {
-char new;
+char letter;
 
-for (new = 'a' ; new <= 'z' ; new++)
+for (letter = 'a' ; letter <= 'z' ; letter++)
 {
-if (new != 'e' && new != 'q')
+if (letter != 'e' && letter != 'q')
 {
-putchar(new);
+putchar(letter);
 }
 }
 putchar('\n');
