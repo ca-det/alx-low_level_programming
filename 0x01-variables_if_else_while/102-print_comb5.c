@@ -7,38 +7,38 @@
 
 int main(void)
 {
-int c = 0;
-int f1;
-int i2;
+int var1 = 0;
+int var2;
+int var3;
 
-int c3;
-int fd;
-int ie;
-while (c <= 98)
+int var4;
+int var5;
+int var6;
+while (var1 <= 98)
 {
-f1 = (c / 10 + '0');
-i2 = (c % 10 + '0');
-c3 = 0;
-while (c3  <= 99)
+var2 = (var1 / 10 + '0');
+var3 = (var1 % 10 + '0');
+var4 = 0;
+while (var4 <= 99)
 {
-fd = (c3 / 10 + '0');
-ie = (c3 % 10 + '0');
-if (c < c3)
+var5 = (var4 / 10 + '0');
+var6 = (var4 % 10 + '0');
+if (var1 < var4)
 {
-putchar(f1);
-putchar(i2);
+putchar(var2);
+putchar(var3);
 putchar(' ');
-putchar(fd);
-putchar(ie);
-if (c != 98)
+putchar(var5);
+putchar(var6);
+if (var1 != 98)
 {
 putchar(',');
 putchar(' ');
 }
 }
-c3++;
+var4++;
 }
-c++;
+var1++;
 }
 putchar('\n');
 return (0);

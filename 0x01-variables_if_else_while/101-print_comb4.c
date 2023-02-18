@@ -7,34 +7,34 @@
 
 int main(void)
 {
-int a;
-int b;
-int c;
+int numa;
+int numb;
+int numc;
 
-while (c < 10)
+while (numc < 10)
 {
-b = 0;
-while (b < 10)
+numb = 0;
+while (numb < 10)
 {
-a = 0;
-while (a < 10)
+numa = 0;
+while (numa < 10)
 {
-if (a != b &&  b != c && c < b && b < a)
+if (numa != numb &&  numb != numc && numc < numb && numb < numa)
 {
-putchar('0' + c);
-putchar('0' + b);
-putchar('0' + a);
-if (a + b + c != 9 + 8 + 7)
+putchar('0' + numc);
+putchar('0' + numb);
+putchar('0' + numa);
+if (numa + numb + numc != 9 + 8 + 7)
 {
 putchar(',');
 putchar(' ');
 }
 }
-a++;
+numa++;
 }
-b++;
+numb++;
 }
-c++;
+numc++;
 }
 putchar('\n');
 return (0);

@@ -7,11 +7,11 @@
 
 int main(void)
 {
-char new;
+char lower;
 
-for (new = 'a' ; new <= 'z' ; new++)
+for (lower = 'a' ; lower <= 'z' ; lower++)
 {
-putchar (new);
+putchar (lower);
 }
 
 putchar('\n');

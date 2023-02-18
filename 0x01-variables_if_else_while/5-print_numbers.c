@@ -7,13 +7,13 @@
 
 int main(void)
 {
-int a;
+int decimal;
 
-for (a = 0 ; a < 10 ; a++)
+for (decimal = 0 ; decimal < 10 ; decimal++)
 {
-printf("%d", a);
+printf("%d", decimal);
 }
-puts("");
+putchar('\n');
 return (0);
 }
 

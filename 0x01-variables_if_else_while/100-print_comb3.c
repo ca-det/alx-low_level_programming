@@ -7,18 +7,18 @@
 
 int main(void)
 {
-int n;
-int o;
+int num1;
+int num2;
 
-for (n = 0; n < 10 ; n++)
+for (num1 = 0; num1 < 10 ; num1++)
 {
-for (o = 0 ; o < 10 ; o++)
+for (num2 = 0 ; num2 < 10 ; num2++)
 {
-if (n != o && n < o)
+if (num1 != num2 && num1 < num2)
 {
-putchar((n % 10) + '0');
-putchar((o % 10) + '0');
-if (n != 8 || o != 9)
+putchar((num1 % 10) + '0');
+putchar((num2 % 10) + '0');
+if (num1 != 8 || num2 != 9)
 {
 putchar(',');
 putchar(' ');
