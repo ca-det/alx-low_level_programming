@@ -3,29 +3,29 @@
  * main-program body print fibonacci
  * Return: 0 (Success)
 */
+
 int main(void)
 {
+int i = 0, n = 50;
+long t1 = 2, t2 = 1;
 
-int i, n = 50;
-int t1 = 0, t2 = 1;
-int followterm = t1 + t2;
-
-for (i = 3 ; i <= n ; ++i)
-if (followterm <= 100)
+while (i < n)
 {
+if (i == 0)
 {
-if (followterm > 1)
-{
-printf(", ");
+printf("%ld", t2);
 }
-if (followterm <= 100)
+else if (i == 1)
 {
-printf("%d ", followterm);
-t1 = t2;
-t2 = followterm;
-followterm = t1 + t2;
+printf(", %ld", t2);
 }
+else
+{
+t1 = t1 + t2;
+t2 = t1 - t2;
+printf(", %ld", t1);
 }
+i++;
 }
 putchar('\n');
 return (0);
