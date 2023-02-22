@@ -10,8 +10,8 @@ long a = 1, k = 2, add = k;
 while (k + a < 4000000)
 {
 k +=  a;
-if (a % 2 == 0)
-add += a;
+if (k % 2 == 0)
+add += k;
 a = k - a;
 ++p;
 }
