@@ -6,13 +6,13 @@
 int main(void)
 {
 int p = 0;
-long a = 1, b = 2, add = b;
-while (a + b < 4000000)
+long a = 1, k = 2, add = k;
+while (k + a < 4000000)
 {
-b +=  a;
+k +=  a;
 if (a % 2 == 0)
-add += b;
-a = b - a;
+add += a;
+a = k - a;
 ++p;
 }
 printf("%ld\n", add);
