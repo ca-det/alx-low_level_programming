@@ -33,13 +33,11 @@ half2 %= 10000000000;
 }
 printf("%lu%lu", half1, half2);
 if (count != 98)
-{
 printf(", ");
 half11 = half21;
 half12 = half22;
 half21 = half1;
 half22 = half2;
-}
 }
 printf("\n");
 return (0);
