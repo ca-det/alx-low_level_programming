@@ -34,7 +34,6 @@ for (num1 = n ; num1 >= 98 ; num1--)
 {
 if (num1 != 98)
 printf("%d, ", num1);
-}
 if (num1 == 98)
 {
 printf("%d\n", num1);
