@@ -1,16 +1,13 @@
-#include "main.h"
-#include "unistd.h"
 #include <stdio.h>
-
 /**
- * natural- printing all natural numbers
- * @n:parameter use
+ * main- printing all natural numbers
+ * Return: 0 (success)
 */
 
-void natural(int n)
+int main(void)
 {
 int i, sum = 0;
-while (i < n)
+while (i < 1024)
 {
 if ((i % 3 == 0)  || (i % 5 == 0))
 {
@@ -19,4 +16,5 @@ sum += i;
 i++;
 }
 printf("%d\n", sum);
+return (0);
 }
