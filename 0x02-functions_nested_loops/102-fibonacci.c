@@ -27,7 +27,7 @@ printf(", %ld", t1);
 }
 i++;
 }
-putchar('\n');
+printf("\n");
 return (0);
 
 }
