@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 /**
  * print_times_table- all the tables
  * @n:parameter here
