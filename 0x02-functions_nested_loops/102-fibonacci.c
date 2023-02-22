@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main-program body print fibonacci
- * Return: 0 (Success)
+ * Return: Nothing!
 */
 
 int main(void)
