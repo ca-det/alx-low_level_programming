@@ -7,15 +7,15 @@
  *Return: the last digits
 */
 int print_last_digit(int p)
-{
-int m;
+{ 
+int check;
 
-m = p % 10;
-if (m < 0)
+check = p % 10;
+if (p < 0)
 {
-m *= -1;
+check = check * -1;
 }
-_putchar(m + '0');
+_putchar( check + '0');
+return (check);
 
-return (0);
 }
