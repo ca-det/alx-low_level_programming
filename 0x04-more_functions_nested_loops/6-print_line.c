@@ -1,20 +1,19 @@
 #include "main.h"
 /**
- * print_line- line drawer in my console
- * @n:parameter
- * Return: null
-*/
-
+ * print_line - Draws a straight line according to parameter
+ * @n: The number of lines to draw
+ * Return: empty
+ */
 void print_line(int n)
 {
-int a;
+int x;
 if (n <= 0)
 {
 _putchar('\n');
 }
 else
 {
-for ( a = 0 ; a < n ; a ++)
+for (x = 0; x < n; x++)
 {
 _putchar(95);
 }

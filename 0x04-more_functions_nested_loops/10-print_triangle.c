@@ -1,26 +1,28 @@
 #include "main.h"
+
 /**
- * print_triangle-diagonal in my console
- * @size:parameter
- * Return: null
+ * print_triangle- Prints a triangle of squares according paramete
+ * Description- print print
+ * @size: The size of the squares triangle
+ * Return: empty
 */
 
 void print_triangle(int size)
 {
-int a, b, c;
+int x, y, z;
 if (size <= 0)
 {
 _putchar('\n');
 }
 else
 {
-for (a = 0 ; a < size ; a++)
+for (x = 0; x < size; x++)
 {
-for (b = 0 ; b < size ; b++)
+for (y = size - x; y > 1; y--)
 {
 _putchar(32);
 }
-for (c = 0 ; c <= a ; c++)
+for (z = 0; z <= x ; z++)
 {
 _putchar(35);
 }
