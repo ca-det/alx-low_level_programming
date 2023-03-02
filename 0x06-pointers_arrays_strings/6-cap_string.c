@@ -1,39 +1,29 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * cap_string- cap cap my words
- * cap_string: capitalize these words
- * @str: parameter used
- * Return: my value
-*/
-
-char *cap_string(char *str)
+ * cap_string - capitalizes words
+ * @s: string
+ *
+ * Return: resulting string
+ */
+char *cap_string(char *s)
 {
-	int num = 0;
-
-	while (str[num])
-	{
-		while (!(str[num] >= 'a' && str[num] <= 'z'))
-			num++;
-		if (str[num - 1] == ' ' ||
-		str[num - 1] == '\t' ||
-		str[num - 1] == '\n' ||
-		str[num - 1] == ',' ||
-		str[num - 1] == ';' ||
-		str[num - 1] == '.' ||
-		str[num - 1] == '!' ||
-		str[num - 1] == '?' ||
-		str[num - 1] == '"' ||
-		str[num - 1] == '(' ||
-		str[num - 1] == ')' ||
-		str[num - 1] == '{' ||
-		str[num - 1] == '}' ||
-		str[num - 1] == 0)
-			str[num] -= 32;
-		num++;
-	}
-	return (str);
+int i, j;
+char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!',
+'?', '"', '(', ')', '{', '}'};
+for (i = 0; s[i] != '\0'; i++)
+{
+if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+s[i] -= 32;
+for (j = 0; j < 13; j++)
+{
+if (s[i] == spe[j])
+{
+if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+{
+s[i + 1] -= 32;
 }
-
-
+}
+}
+}
+return (s);
+}
