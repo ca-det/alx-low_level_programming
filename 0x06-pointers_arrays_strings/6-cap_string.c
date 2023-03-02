@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * cap_string- capping on my words
+ * cap_string- cap cap my words
  * cap_string: capitalize these words
  * @str: parameter used
  * Return: my value
