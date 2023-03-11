@@ -14,17 +14,17 @@ int main(int argc, char *argv[])
 {
 	int pos, tot, chan, ax;
 	int cons[] = {25, 10, 5, 2, 1};
-	
+
 	pos = tot = chan = ax = 0;
-	
+
 	if (argc != 2)
 	{
 		puts("Error");
 		return (1);
 	}
-	
+
 	tot = atoi(argv[1]);
-	
+
 	if (tot <= 0)
 	{
 		puts("0\n");
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 		}
 	pos++;
 	}
-	
+
 	printf("%d\n", chan);
 	return (0);
 }
