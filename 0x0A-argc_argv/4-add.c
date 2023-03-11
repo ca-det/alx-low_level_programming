@@ -13,7 +13,7 @@
 int check_num(char *str)
 {
 	unsigned int count;
-	
+
 	count = 0;
 	while (count < strlen(str))
 	{
@@ -23,7 +23,7 @@ int check_num(char *str)
 		}
 	count++;
 	}
-	
+
 	return (1);
 }
 
@@ -37,7 +37,7 @@ int check_num(char *str)
 int main(int argc, char *argv[])
 {
 	int count, sum = 0, str;
-	
+
 	count = 1;
 	while (count < argc)
 	{
@@ -46,17 +46,16 @@ int main(int argc, char *argv[])
 			str = atoi(argv[count]);
 			sum += str;
 		}
-		else 
+		else
 		{
 			puts("Error");
 			return (1);
 		}
 	count++;
 	}
-	
+
 	printf("%d\n", sum);
-	
+
 	return (0);
 }
 
-		
