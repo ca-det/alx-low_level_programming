@@ -3,6 +3,10 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+/**
+ * _isupper- func it
+ * Return: val
+*/
 
 int _isupper(int c)
 {
